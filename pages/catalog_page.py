@@ -21,7 +21,7 @@ class catalog_page(Base):
     tb_1="//label[@for='filter-value-109849250']"
     drop="//*[@id='body']/div[1]/div[3]/div/div[2]/div/div/div[3]/div/div[2]/div/div/div[2]/select"
     drop_price="//option[@value='price']"
-    product="//*[text()='Смартфон Apple iPhone 16 Pro Max 1 ТБ Черный Титан (nano SIM+eSIM)']"
+    product="//*[text()='Смартфон Apple iPhone 16 Pro Max 512 ГБ Белый Титан (nano SIM+eSIM)']"
     #Getters
     def get_button_catalog(self):
         return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.button_catalog)))
